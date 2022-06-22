@@ -7,11 +7,13 @@
 	},
 	"husky": {
 		"hooks": {
-			"applypatch-msg": "echo \"[Husky] applypatch-msg\"",
-			"pre-applypatch": "echo \"[Husky] pre-applypatch\"",
-			"post-applypatch": "echo \"[Husky] post-applypatch\"",
-			"pre-commit": "echo \"[Husky] pre-commit\""
+			"pre-commit": "lint-staged && pretty-quick --staged"
 		}
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx}": [
+			"eslint"
+		]
 	},
 	"dependencies": {
 		"classnames": "2.3.1",
@@ -25,8 +27,15 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.2",
+		"eslint": "^7.32.0 || ^8.2.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.25.2",
+		"eslint-plugin-prettier": "^4.0.0",
 		"husky": "^8.0.1",
+		"lint-staged": "^13.0.2",
 		"postcss": "^8.4.7",
+		"prettier": "^2.7.1",
 		"tailwindcss": "^3.0.23"
 	}
 }
