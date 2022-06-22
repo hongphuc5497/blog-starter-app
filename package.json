@@ -23,7 +23,10 @@
 		"remark-html": "15.0.1"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^17.0.2",
+		"@commitlint/config-conventional": "^17.0.2",
 		"autoprefixer": "^10.4.2",
+		"commitizen": "^4.2.4",
 		"eslint": "^7.32.0 || ^8.2.0",
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^8.5.0",
