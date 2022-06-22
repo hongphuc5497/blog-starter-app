@@ -1,2 +1,3 @@
-var test = 'cc ne Bao'
-var test2 = 'cc ne Bao'
+let test = 'cc ne Bao';
+
+console.log(test);
