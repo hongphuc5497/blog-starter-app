@@ -5,14 +5,9 @@
 		"build": "next build",
 		"start": "next start"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged && pretty-quick --staged"
-		}
-	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
-			"eslint"
+			"eslint --fix-dry-run"
 		]
 	},
 	"dependencies": {
